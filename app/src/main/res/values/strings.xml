@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Math Paradise</string>
+    <string name="action_settings">Settings</string>
+    <string name="sHowMany">How many are there?</string>
+    <string name="sNextQuestion">Next Question > </string>
+    <string name="sHighScore">High Score</string>
+    <string name="sHighScoreAdvanced">Advanced</string>
+    <string name="sHighScoreHard">Hard</string>
+    <string name="sHighScoreNormal">Normal</string>
+    <string name="sHighScoreEasy">Easy</string>
+</resources>

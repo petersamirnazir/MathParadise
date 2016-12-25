@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="mathparadiseegypt.com.app.MainActivity"
+    android:splitMotionEvents="false">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/first_back"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_arrays_background"
+        android:id="@+id/ivWhiteArraysBackground" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/land"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ivLand"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grass"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ivGrass"/>
+    <ImageView
+        android:id="@+id/ivGirl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/girl"
+        android:layout_above="@id/ivGrass"
+        android:layout_marginLeft="@dimen/x40"/>
+    <ImageView
+        android:id="@+id/ivBoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boy"
+        android:layout_above="@id/ivGrass"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x40" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibPlay"
+        android:src="@drawable/play_b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x40"
+        android:background="@null" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibHighScore"
+        android:background="@drawable/high_score_b"
+        android:layout_below="@id/ibPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/x40"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibExit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ibHighScore"
+        android:background="@drawable/exit_b"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+    </LinearLayout>
+
+</RelativeLayout>
+

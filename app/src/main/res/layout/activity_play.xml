@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mathparadiseegypt.com.app.PlayActivity"
+    android:splitMotionEvents="false">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/first_back"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_arrays_background"
+        android:id="@+id/ivWhiteArraysBackground" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivBoard"
+        android:layout_margin="30dp"
+        android:src="@drawable/board"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/llEasy"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_alignRight="@id/ivBoard"
+        android:layout_alignLeft="@id/ivBoard">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/glEasy"
+            android:layout_gravity="center">
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sHowMany"
+            android:padding="@dimen/fab_margin"
+            android:textSize="@dimen/meduimText"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:id="@+id/tvHowMany"
+            android:background="@drawable/chalk_on_board_not_selected"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:splitMotionEvents="false">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bAnswer1E"
+                android:textSize="@dimen/largeText"
+                android:padding="@dimen/fab_margin"
+                android:gravity="center"
+                android:textColor="@color/colorAnswerNumbers"
+                android:background="@drawable/answer_button_press_animation"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bAnswer2E"
+                android:textSize="@dimen/largeText"
+                android:padding="@dimen/fab_margin"
+                android:gravity="center"
+                android:textColor="@color/colorAnswerNumbers"
+                android:background="@drawable/answer_button_press_animation"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bAnswer3E"
+                android:textSize="@dimen/largeText"
+                android:padding="@dimen/fab_margin"
+                android:gravity="center"
+                android:textColor="@color/colorAnswerNumbers"
+                android:background="@drawable/answer_button_press_animation"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/llNormal"
+    android:orientation="vertical"
+        android:visibility="invisible"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/largeText"
+            android:id="@+id/tvNumber1"
+            android:gravity="center"
+            android:textColor="@color/colorQuestionNumber1"
+            android:background="@drawable/chalk_on_board_not_selected"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/ivSign"
+            android:gravity="center"
+            android:background="@drawable/chalk_on_board_not_selected"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/largeText"
+            android:id="@+id/tvNumber2"
+            android:gravity="center"
+            android:textColor="@color/colorQuestionNumber2"
+            android:background="@drawable/chalk_on_board_not_selected"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:src="@drawable/equal"
+            android:gravity="center"
+            android:background="@drawable/chalk_on_board_not_selected"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAnswerNumber"
+            android:textSize="@dimen/largeText"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/chalk_on_board_not_selected"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:splitMotionEvents="false">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bAnswer1"
+            android:textSize="24sp"
+            android:padding="@dimen/fab_margin"
+            android:gravity="center"
+            android:textColor="@color/colorAnswerNumbers"
+            android:background="@drawable/answer_button_press_animation"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bAnswer2"
+            android:textSize="24sp"
+            android:padding="@dimen/fab_margin"
+            android:gravity="center"
+            android:textColor="@color/colorAnswerNumbers"
+            android:background="@drawable/answer_button_press_animation" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bAnswer3"
+            android:textSize="24sp"
+            android:padding="@dimen/fab_margin"
+            android:gravity="center"
+            android:textColor="@color/colorAnswerNumbers"
+            android:background="@drawable/answer_button_press_animation" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bNextQuestion"
+        android:text="@string/sNextQuestion"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:padding="@dimen/fab_margin"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/ivGirl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/girl"
+        android:layout_alignLeft="@id/ivBoard"
+        android:layout_alignBottom="@id/ivBoard"/>
+    <ImageView
+        android:id="@+id/ivBoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boy"
+        android:layout_alignRight="@id/ivBoard"
+        android:layout_alignBottom="@id/ivBoard"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/rlRightAnswer">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_answer" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/ibNextQuestionRight"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/rlWrongAnswer">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wrong_answer" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/ibNextQuestionWrong"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <ToggleButton
+          android:layout_marginTop="10dp"
+            android:layout_width="43dp"
+            android:layout_height="25dp"
+            android:background="@drawable/toggle_selector"
+            android:id="@+id/tbSound"
+            android:textOff=""
+            android:textOn=""
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:id="@+id/ibBack"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        
+        <TextView
+            android:id="@+id/tv_score_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score ="
+            android:textSize="@dimen/largeText"
+            android:gravity="center"
+            android:textColor="#25408A"
+            />
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/largeText"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="#EC674C"
+            />
+        
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+       >
+
+        <TextView
+            android:id="@+id/tv_mode_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mode:"
+            android:textSize="@dimen/xlargeText"
+            android:gravity="center"
+            android:textColor="#25408A"
+            />
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/xlargeText"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="#EC674C"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

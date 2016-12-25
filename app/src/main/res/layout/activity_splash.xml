@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/t"
+
+    >
+    <ImageView
+        android:id="@+id/background_blue_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_blue_splash"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/footor_splashh"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/light_round_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/light_round_splashhh"
+        android:scaleType="fitXY"
+        />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/sparcle_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sparcle_splashh"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:id="@+id/math_paradise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/math_paradis_splash"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_splash"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="20dp"
+            android:id="@+id/boy_splash" />
+
+        <ImageView
+
+            android:id="@+id/cloud_left_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloud_left_splash"
+            android:layout_gravity="bottom|left"
+            android:layout_marginRight="50dp"/>
+
+        <ImageView
+            android:id="@+id/cloud_right_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloud_right_splash"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="50dp"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_mode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mathparadiseegypt.com.app.GameModeActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/first_back"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_arrays_background"
+        android:id="@+id/ivWhiteArraysBackground" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/land"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ivLand"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:id="@+id/ibBack"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"/>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grass"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ivGrass"/>
+    <ImageView
+        android:id="@+id/ivGirl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/girl"
+        android:layout_above="@id/ivGrass"
+        android:layout_marginLeft="@dimen/x40"/>
+    <ImageView
+        android:id="@+id/ivBoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boy"
+        android:layout_above="@id/ivGrass"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x40" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:splitMotionEvents="false">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bEasy"
+            android:background="@drawable/easy"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bNormal"
+            android:background="@drawable/normal"
+            android:layout_margin="@dimen/fab_margin"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bHard"
+            android:background="@drawable/hard"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bAdvanced"
+            android:background="@drawable/adv"
+            android:layout_above="@id/ivGrass"
+            android:layout_margin="@dimen/fab_margin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
